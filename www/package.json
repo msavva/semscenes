@@ -1,0 +1,51 @@
+{
+  "name": "semscenes",
+  "version": "0.0.1",
+  "description": "SemScenes website",
+  "homepage": "https://github.com/msavva/semscenes",
+  "keywords": [
+    "SemScenes",
+    "docpad"
+  ],
+  "author": "Manolis Savva (http://msavva.github.io)",
+  "maintainers": [
+    "Manolis Savva <msavva@stanford.edu>"
+  ],
+  "contributors": [
+    "Manolis Savva <msavva@stanford.edu>"
+  ],
+  "bugs": {
+    "url": "https://github.com/msavva/semscenes/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/msavva/semscenes.git"
+  },
+  "engines": {
+    "node": "4.1.1",
+    "npm": "3.3.5"
+  },
+  "dependencies": {
+    "docpad": "~6.74.0",
+    "docpad-plugin-cleanurls": "~2.7.0",
+    "docpad-plugin-coffeescript": "~2.5.0",
+    "docpad-plugin-downloader": "~2.1.4",
+    "docpad-plugin-eco": "~2.1.0",
+    "docpad-plugin-ghpages": "~2.4.4",
+    "docpad-plugin-less": "~2.4.1",
+    "docpad-plugin-marked": "~2.3.0",
+    "docpad-plugin-partials": "~2.9.2",
+    "docpad-plugin-related": "~2.2.2",
+    "docpad-plugin-stylus": "~2.9.0",
+    "docpad-plugin-text": "~2.3.3"
+  },
+  "devDependencies": {
+    "docpad-plugin-ghpages": "~2.4.4",
+    "docpad-plugin-livereload": "~2.6.1"
+  },
+  "main": "node_modules/docpad/bin/docpad-server",
+  "scripts": {
+    "start": "node_modules/docpad/bin/docpad run",
+    "deploy": "node_modules/docpad/bin/docpad deploy-ghpages --silent --env static"
+  }
+}
