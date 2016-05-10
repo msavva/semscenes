@@ -12,7 +12,7 @@ docpadConfig = {
     # Specify some site properties
     site:
       # The production url of our website
-      url: "http://msavva.github.io/semscenes"
+      url: "http://msavva.github.io/semscenes/"
 
       # Here are some old site urls that you would like to redirect from
       oldUrls: []
@@ -111,6 +111,12 @@ docpadConfig = {
   # Here we can define handlers for events that DocPad fires
   # You can find a full listing of events on the DocPad Wiki
   events:
+    # prepend site.url when not in development (i.e., when running docpad generate --env static)
+    renderDocument: (opts) ->
+      return if 'development' in @docpad.getEnvironments()
+      if opts.extension is 'html'
+          siteUrl = @docpad.getConfig().templateData.site.url.replace(/\/+$/, '')
+          opts.content = opts.content.replace(/(['"])\/([^\/])/g, "$1#{siteUrl}/$2")
 
     # Server Extend
     # Used to add our own custom routes to the server before the docpad routes are added
