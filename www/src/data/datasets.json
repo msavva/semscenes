@@ -1,0 +1,30 @@
+[
+  {
+	"title": "ScanNet: Richly-annotated 3D Reconstructions of Indoor Scenes",
+	"text": "The ScanNet dataset consists of 1513 RGBD scans in 707 real world indoor environments that have been reconstructed and semantically annotated.", 
+	"web": "http://www.scan-net.org/",
+	"img": "/images/scannet.jpg",
+	"labels": ["rgbd", "real", "scene"]
+  },
+  {
+	"title": "SUNCG: A Large 3D Model Repository for Indoor Scenes",
+	"text": "", 
+	"web": "http://suncg.cs.princeton.edu/",
+	"img": "/images/suncg.png",
+	"labels": ["synthetic", "scene", "object"]
+  },
+  {
+	"title": "Stanford Scene Database",
+	"text": "", 
+	"web": "http://graphics.stanford.edu/projects/scenesynth/",
+	"img": "/images/ssdb.png",
+	"labels": ["synthetic", "scene", "object"]
+  },
+  {
+	"title": "ShapeNet: An Information-Rich 3D Model Repository",
+	"text": "", 
+	"web": "https://www.shapenet.org/",
+	"img": "/images/shapenet.png",
+	"labels": ["synthetic", "object"]
+  }
+]

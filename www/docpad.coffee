@@ -1,3 +1,5 @@
+fs = require 'fs'
+
 # The DocPad Configuration File
 # It is simply a CoffeeScript Object which is parsed by CSON
 docpadConfig = {
@@ -49,6 +51,8 @@ docpadConfig = {
         "/vendor/twitter-bootstrap/dist/js/bootstrap.min.js"
         "/scripts/script.js"
       ]
+
+    datasets: JSON.parse(fs.readFileSync("src/data/datasets.json"))
 
     # -----------------------------
     # Helper Functions
